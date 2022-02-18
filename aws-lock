@@ -1,0 +1,12 @@
+provider "m3"{}
+
+resource "m3_instance" "test-server" {
+  image = "Ubuntu18.04_64-bit"
+  instance_name = "t5366"
+  region_name = "AWS-USEAST-2"
+  tenant_name = "SOFTLINE"
+  shape = "MICRO"
+  key_name = "vvv-devclm"
+  owner = "vitalii.voloboiev@softline.com"
+  lock_termination = true
+}
